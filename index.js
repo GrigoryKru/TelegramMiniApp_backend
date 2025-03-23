@@ -31,7 +31,7 @@ bot.on('message', async (msg) => {
     });
   }
 
-  if (msg?.wed_app_data?.data) {
+  if (msg?.web_app_data?.data) {
     try {
       const data = JSON.parse(msg?.web_app_data?.data);
 
@@ -44,7 +44,7 @@ bot.on('message', async (msg) => {
           chatId,
           ' Всю информацию вы получите в этом чате'
         );
-      }, 3000);
+      }, 1000);
     } catch (e) {
       console.log(e);
     }
